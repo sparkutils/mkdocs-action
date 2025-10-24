@@ -24,6 +24,7 @@ runs:
       run: |
         conda install libgomp=11.2.0 # force the right libs
         conda install graphviz=2.50.0 # conda is from fatty
+        pip install pycparser==2.20
       shell: bash
     - name: setup pips
       run: pip install -r requirements.txt
