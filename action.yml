@@ -26,6 +26,7 @@ runs:
         conda install graphviz=2.50.0 # conda is from fatty
         export PIP_USE_PEP517=1
         pip install pycparser==2.20
+        echo "Pinning setup tools to 81 for pkg_resources"
         pip install setuptools==81.0.0
       shell: bash
     - name: setup pips
