@@ -20,7 +20,7 @@ runs:
     - uses: conda-incubator/setup-miniconda@v4
       with:
         auto-update-conda: true
-        python-version: '3.10'
+        python-version: '3.14'
     - name: setup graphviz etc.
       run: |
         echo conda install libgomp=11.2.0 # force the right libs
