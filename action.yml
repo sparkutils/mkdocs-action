@@ -23,7 +23,7 @@ runs:
         python-version: '3.14'
     - name: setup graphviz etc.
       run: |
-        conda install libgomp=11.2.0 # force the right libs
+        echo conda install libgomp=11.2.0 # force the right libs
         conda install graphviz=2.50.0 # conda is from fatty
         export PIP_USE_PEP517=1
         pip install pycparser==2.20
